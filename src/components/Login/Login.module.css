@@ -1,0 +1,101 @@
+/* Estilos básicos */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../assets/fondosystem-4.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Estilos del contenedor */
+  .container {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    position: absolute; /* Agregué position: absolute */
+    top: 50%; /* Agregué top: 50% */
+    left: 50%; /* Agregué left: 50% */
+    transform: translate(-50%, -50%); /* Agregué transform: translate(-50%, -50%) */
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Estilos del formulario */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 0.5rem;
+    color: #555;
+    text-align: left;
+  }
+  
+  .input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .button {
+    background-color: #6a11cb;
+    color: #fff;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #2575fc;
+  }
+  
+  /* Estilos del botón de Google Login */
+  .googleLoginButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #db4437;
+    color: #fff;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .googleLoginButton:hover {
+    background-color: #c33c2d;
+  }
+  
+  .googleLogo {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+  }
+  
+  /* Estilos de alerta */
+  .alert {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+  }
+  

@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import { Home } from "./components/Home/Home";
+import { Login } from "./components/Login/Login";
+import { Register } from "./components/Register";
+import {AgregarEmpleados} from "./components/AgregarEmpleados/AgregarEmpleados";
+import {ListaEmpleados} from "./components/ListaEmpleados/ListaEmpleados";
+import { AuthProvider } from "./context/authContext";
+import { ProtectedRoute } from "./components/ProtectedRoute";
+import {CalendarComponent} from "./components/CrudApi/CrudApi";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-slate-300 h-screen text-black flex">
+      <AuthProvider>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <ProtectedRoute>
+                <Home />                
+              </ProtectedRoute>
+            }
+          />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/agregarempleados" element={<AgregarEmpleados />} />
+          <Route path="/crudapi" element={<CalendarComponent />} />
+          <Route path="/listaempleados" element={<ListaEmpleados />} />
+        </Routes>
+      </AuthProvider>
     </div>
   );
 }

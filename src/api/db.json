@@ -1,0 +1,24 @@
+{
+  "empleados": [
+    {
+      "id": 1,
+      "nombre": "Jose Rodolfo",
+      "apellidoPaterno": "Alvarado",
+      "apellidoMaterno": "Hernadez",
+      "direccion": "Xocotitlan",
+      "ciudad": "Los mochis",
+      "estado": "Sinaloa",
+      "codigoPostal": "81274",
+      "numEmpleado": "00001",
+      "fechaNacimiento": "2024-06-07",
+      "genero": "Masculino",
+      "tipoNomina": "Quincenal",
+      "rfc": "x0x0x0x0x0x0x",
+      "estadoCivil": "Casado/a",
+      "profesion": "Ingenieria en sistemas",
+      "puesto": "Desarrollador Backend",
+      "email": "loco_2189@hotmail.com",
+      "qrCode": "Nombre: Jose Rodolfo\nNúmero de empleado: 00001"
+    }
+  ]
+}
