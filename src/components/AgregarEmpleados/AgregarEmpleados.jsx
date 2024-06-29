@@ -59,7 +59,7 @@ export const AgregarEmpleados = () => {
         qrCode: generateQRCode(formData),
       };
 
-      await axios.post("https://api-server-6n9nhf9lf-rennitos-projects.vercel.app/empleados", data);
+      await axios.post("https://api-server-8bfjq1d4s-rennitos-projects.vercel.app/empleados", data);
 
       const qrData = {
         ...data,
@@ -90,7 +90,7 @@ export const AgregarEmpleados = () => {
 
   const getNextId = async () => {
     try {
-      const response = await axios.get("https://api-server-6n9nhf9lf-rennitos-projects.vercel.app/empleados");
+      const response = await axios.get("https://api-server-8bfjq1d4s-rennitos-projects.vercel.app/empleados");
       const empleados = response.data;
       const lastId =
         empleados.length > 0 ? empleados[empleados.length - 1].id : 0;
@@ -103,7 +103,7 @@ export const AgregarEmpleados = () => {
 
   const getNextEmployeeNumber = async () => {
     try {
-      const response = await axios.get("https://api-server-6n9nhf9lf-rennitos-projects.vercel.app/empleados");
+      const response = await axios.get("https://api-server-8bfjq1d4s-rennitos-projects.vercel.app/empleados");
       const empleados = response.data;
       const lastEmployee =
         empleados.length > 0 ? empleados[empleados.length - 1].numEmpleado : 0;
