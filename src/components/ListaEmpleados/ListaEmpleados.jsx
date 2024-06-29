@@ -27,7 +27,7 @@ export function ListaEmpleados() {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5000/empleados")
+    fetch("https://api-server-6n9nhf9lf-rennitos-projects.vercel.app/empleados")
       .then((response) => response.json())
       .then((data) => setEmpleados(data))
       .catch((error) => console.error("Error fetching empleados", error));
@@ -47,7 +47,7 @@ export function ListaEmpleados() {
   };
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:5000/empleados/${id}`, {
+    fetch(`https://api-server-6n9nhf9lf-rennitos-projects.vercel.app/empleados/${id}`, {
       method: "DELETE",
     })
       .then(() => {
