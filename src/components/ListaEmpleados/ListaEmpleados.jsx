@@ -27,11 +27,7 @@ export function ListaEmpleados() {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    fetch("/empleados", {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    })
+    fetch("https://api-server-r60vmqlij-rennitos-projects.vercel.app/empleados")
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
