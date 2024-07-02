@@ -17,6 +17,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.2",
+    "cors": "^2.8.5",
     "firebase": "^10.12.2",
     "qrcode.react": "^3.1.0",
     "react": "^18.3.1",
@@ -52,5 +53,6 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.4"
-  }
+  },
+  "proxy": "https://api-server-r60vmqlij-rennitos-projects.vercel.app"
 }
