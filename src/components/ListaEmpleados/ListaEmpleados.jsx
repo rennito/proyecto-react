@@ -52,7 +52,7 @@ export function ListaEmpleados() {
   };
 
   const handleDelete = (id) => {
-    fetch(`https://fake-eosin.vercel.app/empleados/empleados/${id}`, {
+    fetch(`https://fake-eosin.vercel.app/empleados/${id}`, {
       method: "DELETE",
     })
       .then(() => {
