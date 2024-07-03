@@ -54,5 +54,5 @@
   "devDependencies": {
     "tailwindcss": "^3.4.4"
   },
-  "proxy": "https://api-server-r60vmqlij-rennitos-projects.vercel.app"
+  "proxy": "https://fake-eosin.vercel.app/empleados"
 }

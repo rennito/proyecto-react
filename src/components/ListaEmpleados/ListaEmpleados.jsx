@@ -27,7 +27,7 @@ export function ListaEmpleados() {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    fetch("https://api-server-r60vmqlij-rennitos-projects.vercel.app/empleados")
+    fetch("https://fake-eosin.vercel.app/empleados")
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -52,7 +52,7 @@ export function ListaEmpleados() {
   };
 
   const handleDelete = (id) => {
-    fetch(`https://api-server-r60vmqlij-rennitos-projects.vercel.app/empleados/${id}`, {
+    fetch(`https://fake-eosin.vercel.app/empleados/empleados/${id}`, {
       method: "DELETE",
     })
       .then(() => {
